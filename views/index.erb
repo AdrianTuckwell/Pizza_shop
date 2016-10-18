@@ -1,0 +1,9 @@
+<h2>Pizza Orders</h2>
+
+<% @pizza.each do |pizza| %>
+  <b>Name:</b> 
+  <p><%= pizza.full_name() %></p>
+  <b>Order:</b>
+  <p><%= pizza.quantity %> X <%=pizza.topping %></p>
+  <hr>
+<%end%>
